@@ -1,7 +1,7 @@
 // Sehaj Dhaliwal
 // Dhaliwalsehaj36@csu.fullerton.edu
 // @sehaj36
-// @bryan-450
+// Partners: @Bryan-450
 
 #include <iostream>
 #include <string>
@@ -9,7 +9,7 @@
 
 int main(int argc, char* argv[]) {
   std::vector<std::string> arguments{argv, argv + argc};
-  if (arguments.size() !=4){
+  if (arguments.size() != 4) {
     std::cout << "Error: you must supply three arguments\n";
     return 1;
   }
@@ -22,9 +22,10 @@ int main(int argc, char* argv[]) {
   // protein, bread, and condiment input.
   // Initialize each variable with an element of the arguments vector
   // declared above.
-  std::cout << "Your order: A " << protein << " sandwich on " 
-            << bread << " with " << "."
+  std::cout << "Your order:\nA " << protein << " sandwich on " << bread
+            << " with " << condiment << "."
             << "\n.";
+
   // TODO(sehaj): Use cout to print output following the pattern
   // Your order: A *PROTEIN* sandwich on *BREAD* with *CONDIMENT*.
   // on its own line.
