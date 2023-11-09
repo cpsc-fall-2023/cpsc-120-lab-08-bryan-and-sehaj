@@ -17,8 +17,7 @@ int main(int argc, char* argv[]) {
   for (int counter{1}; counter < argc; counter++) {
     sum = sum + std::stod(arguments.at(counter));
   }
-  double average{0};
-  average = sum / (arguments.size() - 1);
+  double average{sum / (argc - 1)};
   std::cout << "average = " << average << "\n";
   return 0;
 }
